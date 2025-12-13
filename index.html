@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Portfolio | Cloud & ML</title>
+    <!-- Google Fonts for modern typography -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">&uarr;</a>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">Isha<span> Gautam</span></div>
+                <div class="hamburger" id="hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about" onclick="closeMenu()">About</a></li>
+                    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                    <li><a href="#certifications" onclick="closeMenu()">Certifications</a></li> <!-- Added Link -->
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                    <li><a href="#" class="btn" style="padding: 8px 20px; font-size: 0.9rem;">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-code">def init():</div>
+        <div class="container hero-content reveal">
+            <h1><span>Hello, I'm Alex.</span>Engineering the Future<br>of Data.</h1>
+            <div class="hero-subtitle">
+                I am <span id="typing-text"></span><span class="cursor">|</span>
+            </div>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 40px;">
+                Aspiring Cloud & ML Engineer building scalable solutions, predictive models, and intelligent automated systems using Python.
+            </p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>I am a pre-final year Engineering student with a deep passion for the intersection of <strong>Cloud Computing</strong> and <strong>Artificial Intelligence</strong>. My journey started with Python scripting and evolved into deploying complex ML models on AWS.</p>
+                    <p>I focus on writing clean, efficient code and understanding the underlying infrastructure that powers modern applications. I am actively looking for opportunities to contribute to innovative teams.</p>
+                    
+                    <!-- CLICKABLE STATS -->
+                    <div class="about-stats">
+                        <a href="#projects" class="stat-card">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </a>
+                        <a href="#certifications" class="stat-card">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Certifications</div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="about-visual reveal" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <!-- Simple CSS Graphic for Visual Interest -->
+                    <div style="width: 200px; height: 200px; margin: 0 auto; border: 2px solid var(--accent-cyan); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; box-shadow: 0 0 30px rgba(6, 182, 212, 0.1);">
+                        <div style="width: 160px; height: 160px; border: 2px solid var(--accent-purple); border-radius: 50%; position: absolute;"></div>
+                        <span style="font-family: var(--font-code); color: var(--text-primary);">ENGINEER</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">Tech Stack</h2>
+            <div class="skills-container">
+                
+                <!-- Cloud -->
+                <div class="skill-category reveal">
+                    <h3 style="color: var(--accent-cyan);">// Cloud Computing</h3>
+                    <div class="skill-tags">
+                        <span class="tag">AWS EC2</span>
+                        <span class="tag">Lambda</span>
+                        <span class="tag">S3 Buckets</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">CI/CD Pipelines</span>
+                    </div>
+                </div>
+
+                <!-- AI / ML -->
+                <div class="skill-category reveal">
+                    <h3 style="color: var(--accent-purple);">// Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Scikit-Learn</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">Jupyter</span>
+                    </div>
+                </div>
+
+                <!-- Languages & Tools -->
+                <div class="skill-category reveal">
+                    <h3 style="color: var(--text-primary);">// Core & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Git & Github</span>
+                        <span class="tag">Linux/Bash</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">Flask/FastAPI</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card reveal" onmousemove="handleMouseMove(event)">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/111827/06b6d4?text=Cloud+AI+Project" alt="Cloud Image Classifier">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon">📁</div>
+                        </div>
+                        <h3>Cloud-Native Image Classifier</h3>
+                        <p>A scalable application deployed on AWS Lambda using Docker containers. It processes user uploaded images and classifies them using a pre-trained ResNet model.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>AWS Lambda</span>
+                            <span>Docker</span>
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="project-links-footer">
+                            <a href="#" class="project-link link-github">GitHub</a>
+                            <a href="#" class="project-link link-live">View Live <span style="font-size: 1.2em; line-height: 0;">&nearr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal" onmousemove="handleMouseMove(event)">
+                    <div class="project-image">
+                         <img src="https://placehold.co/600x400/111827/8b5cf6?text=Stock+Prediction" alt="Stock Prediction">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon">📁</div>
+                        </div>
+                        <h3>Stock Price Predictor</h3>
+                        <p>Time-series forecasting model using LSTM neural networks. Visualizes historical data and future predictions with an interactive Streamlit dashboard.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Keras</span>
+                            <span>Streamlit</span>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="project-links-footer">
+                            <a href="#" class="project-link link-github">GitHub</a>
+                            <a href="#" class="project-link link-live">View Live <span style="font-size: 1.2em; line-height: 0;">&nearr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal" onmousemove="handleMouseMove(event)">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/111827/ffffff?text=DevOps+Pipeline" alt="DevOps Pipeline">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <div class="folder-icon">📁</div>
+                        </div>
+                        <h3>Automated DevOps Pipeline</h3>
+                        <p>Implemented a complete CI/CD pipeline for a microservices app. Includes automated testing, containerization, and deployment to a Kubernetes cluster.</p>
+                        <div class="project-tech">
+                            <span>Jenkins</span>
+                            <span>Kubernetes</span>
+                            <span>Bash</span>
+                            <span>Git</span>
+                        </div>
+                        <div class="project-links-footer">
+                            <a href="#" class="project-link link-github">GitHub</a>
+                            <a href="#" class="project-link link-live">View Live <span style="font-size: 1.2em; line-height: 0;">&nearr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title reveal">Certifications</h2>
+            <div class="cert-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card reveal">
+                    <div class="cert-icon">☁️</div>
+                    <div class="cert-info">
+                        <h3>AWS Certified Solutions Architect – Associate</h3>
+                        <p>Amazon Web Services • 2024</p>
+                    </div>
+                </div>
+                <!-- Cert 2 -->
+                <div class="cert-card reveal">
+                    <div class="cert-icon">🤖</div>
+                    <div class="cert-info">
+                        <h3>Deep Learning Specialization</h3>
+                        <p>Coursera / DeepLearning.AI • 2023</p>
+                    </div>
+                </div>
+                <!-- Cert 3 -->
+                <div class="cert-card reveal">
+                    <div class="cert-icon">🐍</div>
+                    <div class="cert-info">
+                        <h3>Professional Python Programmer</h3>
+                        <p>Python Institute • 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding-bottom: 50px;">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            
+            <div class="contact-wrapper reveal">
+                <!-- Contact Info Side -->
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p class="contact-desc">
+                        I'm currently looking for internships and full-time positions in Cloud Engineering or Machine Learning. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                    
+                    <div class="social-links-container">
+                        <a href="#" class="social-item">
+                            <div class="social-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </div>
+                            <span>ghttps://github.com/gautamisha25-netizen/portfolio-isha</span>
+                        </a>
+                        <a href="#" class="social-item">
+                            <div class="social-icon">
+                                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </div>
+                            <span>linkedin.com/in/alex</span>
+                        </a>
+                        <a href="#" class="social-item">
+                            <div class="social-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
+                            </div>
+                            <span>gautamisha@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Side -->
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Designed & Built by Alex • 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
